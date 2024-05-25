@@ -1,0 +1,9 @@
+#!/bin/bash
+
+for f in $(ls /etc/click/databases); do
+    source <(grep = /etc/click/databases/$f | sed 's/ *= */=/g')
+done
+
+NODE_PATH=${root}/nodejs.fredldotme/current/lib/aarch64-linux-gnu/node_modules \
+    ${root}/nodejs.fredldotme/current/lib/aarch64-linux-gnu/bin/node \
+    ${root}/nodejs.fredldotme/current/lib/aarch64-linux-gnu/node_modules/npm/bin/npm-cli.js $@

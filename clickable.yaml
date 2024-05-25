@@ -1,0 +1,18 @@
+clickable_minimum_required: 8.0.0
+builder: cmake
+kill: nodejs
+
+image_setup:
+  run:
+  - curl -fsSL https://deb.nodesource.com/setup_current.x | bash -
+  - apt-get install -y nodejs:$ARCH
+
+dependencies_target:
+  - nodejs
+
+install_bin:
+  - /usr/bin/node
+  - $ROOT/wrappers/*
+
+install_lib:
+  - /usr/lib/node_modules

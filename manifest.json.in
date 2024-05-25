@@ -1,0 +1,15 @@
+{
+    "name": "nodejs.fredldotme",
+    "description": "node.js for Ubuntu Touch",
+    "architecture": "@CLICK_ARCH@",
+    "title": "Node.js",
+    "hooks": {
+        "tools": {
+            "apparmor": "nodejs.apparmor",
+            "desktop":  "nodejs.desktop"
+        }
+    },
+    "version": "22.2.0",
+    "maintainer": "Alfred Neumayer <dev.beidl@gmail.com>",
+    "framework" : "@CLICK_FRAMEWORK@"
+}

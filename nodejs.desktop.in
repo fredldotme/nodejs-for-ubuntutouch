@@ -1,0 +1,9 @@
+[Desktop Entry]
+_Name=Node.js
+Exec=nodejs %U
+Icon=assets/logo.png
+Terminal=false
+Type=Application
+X-Lomiri-Touch=true
+X-Lomiri-Splash-Show-Header=true
+X-Lomiri-Splash-Color=#1c5f18
